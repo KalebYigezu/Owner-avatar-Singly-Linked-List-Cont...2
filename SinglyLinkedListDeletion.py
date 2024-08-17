@@ -58,6 +58,7 @@ class SingleLinkedList:
             temp = temp.next
             prev = prev.next
         prev.next = temp.next
+        temp.next = None
 
 
 L = SingleLinkedList()
@@ -74,6 +75,5 @@ n4.next = n5
 
 #L.delete_begining()
 #L.delete_end()
-L.delete_position(0)
+L.delete_position(4)
 L.display()
-
